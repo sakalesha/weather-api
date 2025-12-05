@@ -1,4 +1,4 @@
-import { cityCoordinates } from "../../utils/cityData.js";
+import { cityCoordinates } from "../utils/cityData.js";
 
 export const searchCities = (keyword) => {
   keyword = keyword.toLowerCase();
