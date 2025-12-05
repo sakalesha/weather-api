@@ -9,7 +9,7 @@ import cityRoutes from "./routes/cityRoutes.js";
 
 const app = express();
 
-// ✅ CORS FIX (Express 5 Compatible)
+// ✅ EXPRESS 5 SAFE CORS FIX (No app.options)
 app.use(
   cors({
     origin: "*",
@@ -18,10 +18,7 @@ app.use(
   })
 );
 
-// Preflight handler (IMPORTANT)
-app.options("/*", cors());
-
-// Additional CORS fallback
+// Fallback (Render proxy)
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Content-Type");
