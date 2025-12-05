@@ -88,7 +88,7 @@ node index.js
 Server will run on:
 
 ```
-(http://localhost:3000)
+http://localhost:3000
 ```
 ---
 
@@ -96,7 +96,7 @@ Server will run on:
 
 ### 🔹 Base URL  
 ```
-(https://your-deployed-url.com)
+https://your-deployed-url.com
 ```
 ---
 
@@ -121,8 +121,13 @@ GET /weather?city=<city_name>
     "updated_at": "2025-12-05T11:00"
   }
 }
+```
 
-2️⃣ City Autocomplete Search
+---
+
+## 2️⃣ ** City Autocomplete Searchry**
+### Endpoint  
+
 Endpoint
 GET /city/search?q=<keyword>
 Example
@@ -133,7 +138,9 @@ Response
   "results": ["bangalore"]
 }
 
-🧪 Test Cases (Verified)
+---
+
+## 🧪 **Test Cases (Verified)**
 ```
 | Test Type               | Status |
 | ----------------------- | ------ |
