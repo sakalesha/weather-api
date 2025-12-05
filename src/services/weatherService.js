@@ -1,6 +1,6 @@
 import axios from "axios";
-import cache from "../../routes/utils/cache.js";
-import { cityCoordinates } from "../../routes/utils/cityData.js";
+import cache from "../../utils/cache.js";
+import { cityCoordinates } from "../../utils/cityData.js";
 
 export const getWeatherData = async (city) => {
   city = city.toLowerCase();

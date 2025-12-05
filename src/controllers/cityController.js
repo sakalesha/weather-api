@@ -1,4 +1,4 @@
-import { searchCities } from "./services/cityService.js";
+import { searchCities } from "../services/cityService.js";
 
 export const autocompleteCity = (req, res, next) => {
   try {

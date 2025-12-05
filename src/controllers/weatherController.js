@@ -1,4 +1,4 @@
-import { getWeatherData } from "./services/weatherService.js";
+import { getWeatherData } from "../services/weatherService.js";
 
 export const getWeather = async (req, res, next) => {
   try {
