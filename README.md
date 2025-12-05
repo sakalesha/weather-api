@@ -175,6 +175,6 @@ Start Command: node index.js
 
 ## 👨‍💻 Author
 
-Ronada Sakalesha
-[LinkedIn](https://www.linkedin.com/in/ronada-sakalesha/)
-[GitHub](https://github.com/sakalesha)
+- Ronada Sakalesha
+- [LinkedIn](https://www.linkedin.com/in/ronada-sakalesha/)
+- [GitHub](https://github.com/sakalesha)
