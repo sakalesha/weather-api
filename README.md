@@ -127,21 +127,24 @@ GET /weather?city=<city_name>
 
 ## 2️⃣ ** City Autocomplete Searchry**
 ### Endpoint  
-
-Endpoint
 GET /city/search?q=<keyword>
-Example
+
+###Example
+```
 /city/search?q=ba
-Response
+```
+
+### Response
+```
 {
   "success": true,
   "results": ["bangalore"]
 }
-
+```
 ---
 
 ## 🧪 **Test Cases (Verified)**
-```
+
 | Test Type               | Status |
 | ----------------------- | ------ |
 | Valid weather responses | ✅      |
@@ -152,10 +155,12 @@ Response
 | Cache performance check | ✅      |
 | Rate limiter test       | ✅      |
 | Error middleware output | ✅      |
-```
+
 All test cases have been successfully passed.
 
-☁️ Deployment Instructions (Render)
+--- 
+
+## ☁️ Deployment Instructions (Render)
 
 1. Push repository to GitHub
 2. Visit (https://render.com)
@@ -166,7 +171,9 @@ Build Command: (empty)
 Start Command: node index.js
 6. Deploy → Get Public URL
 
-👨‍💻 Author
+---
+
+## 👨‍💻 Author
 
 Ronada Sakalesha
 [LinkedIn](https://www.linkedin.com/in/ronada-sakalesha/)
