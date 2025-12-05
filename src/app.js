@@ -9,15 +9,17 @@ import cityRoutes from "./routes/cityRoutes.js";
 
 const app = express();
 
-// ✅ FULL CORS FIX
-app.use(cors({
-  origin: "*",
-  methods: ["GET"],
-  allowedHeaders: ["Content-Type"],
-}));
+// ✅ CORS FIX (Express 5 Compatible)
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 
-// Preflight
-app.options("*", cors());
+// Preflight handler (IMPORTANT)
+app.options("/*", cors());
 
 // Additional CORS fallback
 app.use((req, res, next) => {
@@ -27,7 +29,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Middleware
+// Logger & rate limiter
 app.use(logger);
 app.use(apiLimiter);
 
